@@ -1,0 +1,129 @@
+body {
+    font-family: "得意黑";
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #5fb4ff;
+    /* 淡蓝色背景 */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* 圆角 */
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+}
+
+.header h1 {
+    color: white;
+    /* 白色字体 */
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+}
+
+.update-log-box {
+    background-color: #fff9e6;
+    /* 淡黄色背景 */
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* 圆角 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+}
+
+.update-log-box:hover {
+    background-color: #ffeb3b;
+    /* 鼠标悬停时的背景色 */
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.synth-table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+.synth-table th,
+.synth-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.synth-table th {
+    background-color: #7fc3ff;
+    /* 淡蓝色背景 */
+    color: white;
+    /* 白色字体 */
+}
+
+.synth-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.synth-table tr:hover {
+    background-color: #ddd;
+}
+
+.item-image {
+    width: 32px;
+    /* 图片宽度 */
+    height: 32px;
+    /* 图片高度 */
+    margin-right: 5px;
+    /* 图片之间的间距 */
+    vertical-align: middle;
+    /* 垂直居中 */
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* 位置调整 */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

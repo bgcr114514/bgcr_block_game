@@ -1,0 +1,964 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合成表</title>
+    <link rel = "stylesheet"href = "./synth.css" />
+</head>
+<body>
+    <div class="header">
+        <h1>合成表</h1>
+    </div>
+    <div class="container">
+        <div class="update-log-box" onclick="location.href='./update-log.html';">
+            更新日志
+        </div>
+        <div class="update-log-box" onclick="location.href='./synth.html';" style="top: 50px;">
+            合成表
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="搜索物品">
+        </div>
+        <table class="synth-table" id="synth-table">
+            <thead>
+                <tr>
+                    <th>合成物</th>
+                    <th>用来合成的物品</th>
+                    <th>合成数量</th>
+                    <th>在哪里合成</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr class="synth-row" data-synth-item="wood_bar">
+                <td>
+            <span class="tooltip">
+                <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                <span class="tooltiptext">wood_bar</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/wood_broad.png" class="item-image" alt="wood_broad">
+                    <span class="tooltiptext">wood_broad</span>
+                </span>
+                1
+            </td>
+                <td>3</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/knapsack.png" class="item-image" alt="knapsack">
+                <span class="tooltiptext">knapsack</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="wood_broad">
+                <td>
+            <span class="tooltip">
+                <img src="./images/wood_broad.png" class="item-image" alt="wood_broad">
+                <span class="tooltiptext">wood_broad</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/wood.png" class="item-image" alt="wood">
+                    <span class="tooltiptext">wood</span>
+                </span>
+                1
+            </td>
+                <td>2</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/knapsack.png" class="item-image" alt="knapsack">
+                <span class="tooltiptext">knapsack</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="wood_draft">
+                <td>
+            <span class="tooltip">
+                <img src="./images/wood_draft.png" class="item-image" alt="wood_draft">
+                <span class="tooltiptext">wood_draft</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/wood_broad.png" class="item-image" alt="wood_broad">
+                    <span class="tooltiptext">wood_broad</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                3
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="stone_draft">
+                <td>
+            <span class="tooltip">
+                <img src="./images/stone_draft.png" class="item-image" alt="stone_draft">
+                <span class="tooltiptext">stone_draft</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/stone.png" class="item-image" alt="stone">
+                    <span class="tooltiptext">stone</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                3
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="iron_draft">
+                <td>
+            <span class="tooltip">
+                <img src="./images/iron_draft.png" class="item-image" alt="iron_draft">
+                <span class="tooltiptext">iron_draft</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/iron_ingot.png" class="item-image" alt="iron_ingot">
+                    <span class="tooltiptext">iron_ingot</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                3
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="gold_draft">
+                <td>
+            <span class="tooltip">
+                <img src="./images/gold_draft.png" class="item-image" alt="gold_draft">
+                <span class="tooltiptext">gold_draft</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/gold_ingot.png" class="item-image" alt="gold_ingot">
+                    <span class="tooltiptext">gold_ingot</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                3
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="wood_sword">
+                <td>
+            <span class="tooltip">
+                <img src="./images/wood_sword.png" class="item-image" alt="wood_sword">
+                <span class="tooltiptext">wood_sword</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/wood_broad.png" class="item-image" alt="wood_broad">
+                    <span class="tooltiptext">wood_broad</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                2
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="stone_sword">
+                <td>
+            <span class="tooltip">
+                <img src="./images/stone_sword.png" class="item-image" alt="stone_sword">
+                <span class="tooltiptext">stone_sword</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/stone.png" class="item-image" alt="stone">
+                    <span class="tooltiptext">stone</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                2
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="iron_sword">
+                <td>
+            <span class="tooltip">
+                <img src="./images/iron_sword.png" class="item-image" alt="iron_sword">
+                <span class="tooltiptext">iron_sword</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/iron_ingot.png" class="item-image" alt="iron_ingot">
+                    <span class="tooltiptext">iron_ingot</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                2
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="gold_sword">
+                <td>
+            <span class="tooltip">
+                <img src="./images/gold_sword.png" class="item-image" alt="gold_sword">
+                <span class="tooltiptext">gold_sword</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/gold_ingot.png" class="item-image" alt="gold_ingot">
+                    <span class="tooltiptext">gold_ingot</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                2
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="gold_block">
+                <td>
+            <span class="tooltip">
+                <img src="./images/gold_block.png" class="item-image" alt="gold_block">
+                <span class="tooltiptext">gold_block</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/stone.png" class="item-image" alt="stone">
+                    <span class="tooltiptext">stone</span>
+                </span>
+                2
+             
+                <span class="tooltip">
+                    <img src="./images/gold_ore.png" class="item-image" alt="gold_ore">
+                    <span class="tooltiptext">gold_ore</span>
+                </span>
+                1
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="iron_block">
+                <td>
+            <span class="tooltip">
+                <img src="./images/iron_block.png" class="item-image" alt="iron_block">
+                <span class="tooltiptext">iron_block</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/stone.png" class="item-image" alt="stone">
+                    <span class="tooltiptext">stone</span>
+                </span>
+                2
+             
+                <span class="tooltip">
+                    <img src="./images/iron_ore.png" class="item-image" alt="iron_ore">
+                    <span class="tooltiptext">iron_ore</span>
+                </span>
+                1
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="workbench">
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/wood_broad.png" class="item-image" alt="wood_broad">
+                    <span class="tooltiptext">wood_broad</span>
+                </span>
+                6
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/knapsack.png" class="item-image" alt="knapsack">
+                <span class="tooltiptext">knapsack</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="furnace">
+                <td>
+            <span class="tooltip">
+                <img src="./images/furnace.png" class="item-image" alt="furnace">
+                <span class="tooltiptext">furnace</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/stone.png" class="item-image" alt="stone">
+                    <span class="tooltiptext">stone</span>
+                </span>
+                5
+             
+                <span class="tooltip">
+                    <img src="./images/wood.png" class="item-image" alt="wood">
+                    <span class="tooltiptext">wood</span>
+                </span>
+                2
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="water_purifier">
+                <td>
+            <span class="tooltip">
+                <img src="./images/water_purifier.png" class="item-image" alt="water_purifier">
+                <span class="tooltiptext">water_purifier</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/glass.png" class="item-image" alt="glass">
+                    <span class="tooltiptext">glass</span>
+                </span>
+                4
+             
+                <span class="tooltip">
+                    <img src="./images/wood_broad.png" class="item-image" alt="wood_broad">
+                    <span class="tooltiptext">wood_broad</span>
+                </span>
+                2
+             
+                <span class="tooltip">
+                    <img src="./images/coal_ore.png" class="item-image" alt="coal_ore">
+                    <span class="tooltiptext">coal_ore</span>
+                </span>
+                1
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="glass_bottle">
+                <td>
+            <span class="tooltip">
+                <img src="./images/glass_bottle.png" class="item-image" alt="glass_bottle">
+                <span class="tooltiptext">glass_bottle</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/glass.png" class="item-image" alt="glass">
+                    <span class="tooltiptext">glass</span>
+                </span>
+                3
+            </td>
+                <td>2</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="glass">
+                <td>
+            <span class="tooltip">
+                <img src="./images/glass.png" class="item-image" alt="glass">
+                <span class="tooltiptext">glass</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/sand_block.png" class="item-image" alt="sand_block">
+                    <span class="tooltiptext">sand_block</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/coal_ore.png" class="item-image" alt="coal_ore">
+                    <span class="tooltiptext">coal_ore</span>
+                </span>
+                1
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/furnace.png" class="item-image" alt="furnace">
+                <span class="tooltiptext">furnace</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="sugar">
+                <td>
+            <span class="tooltip">
+                <img src="./images/sugar.png" class="item-image" alt="sugar">
+                <span class="tooltiptext">sugar</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/sugar_cane.png" class="item-image" alt="sugar_cane">
+                    <span class="tooltiptext">sugar_cane</span>
+                </span>
+                1
+            </td>
+                <td>3</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="mud_water_bottle">
+                <td>
+            <span class="tooltip">
+                <img src="./images/mud_water_bottle.png" class="item-image" alt="mud_water_bottle">
+                <span class="tooltiptext">mud_water_bottle</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/glass_bottle.png" class="item-image" alt="glass_bottle">
+                    <span class="tooltiptext">glass_bottle</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/soil_block.png" class="item-image" alt="soil_block">
+                    <span class="tooltiptext">soil_block</span>
+                </span>
+                1
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/knapsack.png" class="item-image" alt="knapsack">
+                <span class="tooltiptext">knapsack</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="water_bottle">
+                <td>
+            <span class="tooltip">
+                <img src="./images/water_bottle.png" class="item-image" alt="water_bottle">
+                <span class="tooltiptext">water_bottle</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/mud_water_bottle.png" class="item-image" alt="mud_water_bottle">
+                    <span class="tooltiptext">mud_water_bottle</span>
+                </span>
+                1
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/water_purifier.png" class="item-image" alt="water_purifier">
+                <span class="tooltiptext">water_purifier</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="tea_bottle">
+                <td>
+            <span class="tooltip">
+                <img src="./images/tea_bottle.png" class="item-image" alt="tea_bottle">
+                <span class="tooltiptext">tea_bottle</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/water_bottle.png" class="item-image" alt="water_bottle">
+                    <span class="tooltiptext">water_bottle</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/tea-leaf.png" class="item-image" alt="tea-leaf">
+                    <span class="tooltiptext">tea-leaf</span>
+                </span>
+                1
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="milk_with_tea">
+                <td>
+            <span class="tooltip">
+                <img src="./images/milk_with_tea.png" class="item-image" alt="milk_with_tea">
+                <span class="tooltiptext">milk_with_tea</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/tea_bottle.png" class="item-image" alt="tea_bottle">
+                    <span class="tooltiptext">tea_bottle</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/milk.png" class="item-image" alt="milk">
+                    <span class="tooltiptext">milk</span>
+                </span>
+                1
+            </td>
+                <td>2</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="iron_ingot">
+                <td>
+            <span class="tooltip">
+                <img src="./images/iron_ingot.png" class="item-image" alt="iron_ingot">
+                <span class="tooltiptext">iron_ingot</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/iron_ore.png" class="item-image" alt="iron_ore">
+                    <span class="tooltiptext">iron_ore</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/coal_ore.png" class="item-image" alt="coal_ore">
+                    <span class="tooltiptext">coal_ore</span>
+                </span>
+                1
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/furnace.png" class="item-image" alt="furnace">
+                <span class="tooltiptext">furnace</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="gold_ingot">
+                <td>
+            <span class="tooltip">
+                <img src="./images/gold_ingot.png" class="item-image" alt="gold_ingot">
+                <span class="tooltiptext">gold_ingot</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/gold_ore.png" class="item-image" alt="gold_ore">
+                    <span class="tooltiptext">gold_ore</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/coal_ore.png" class="item-image" alt="coal_ore">
+                    <span class="tooltiptext">coal_ore</span>
+                </span>
+                1
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/furnace.png" class="item-image" alt="furnace">
+                <span class="tooltiptext">furnace</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="slik">
+                <td>
+            <span class="tooltip">
+                <img src="./images/slik.png" class="item-image" alt="slik">
+                <span class="tooltiptext">slik</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/feathers.png" class="item-image" alt="feathers">
+                    <span class="tooltiptext">feathers</span>
+                </span>
+                1
+            </td>
+                <td>3</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="bow">
+                <td>
+            <span class="tooltip">
+                <img src="./images/bow.png" class="item-image" alt="bow">
+                <span class="tooltiptext">bow</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/slik.png" class="item-image" alt="slik">
+                    <span class="tooltiptext">slik</span>
+                </span>
+                3
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="arrow">
+                <td>
+            <span class="tooltip">
+                <img src="./images/arrow.png" class="item-image" alt="arrow">
+                <span class="tooltiptext">arrow</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/feathers.png" class="item-image" alt="feathers">
+                    <span class="tooltiptext">feathers</span>
+                </span>
+                4
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                4
+             
+                <span class="tooltip">
+                    <img src="./images/stone.png" class="item-image" alt="stone">
+                    <span class="tooltiptext">stone</span>
+                </span>
+                1
+            </td>
+                <td>4</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="torch">
+                <td>
+            <span class="tooltip">
+                <img src="./images/torch.png" class="item-image" alt="torch">
+                <span class="tooltiptext">torch</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                3
+             
+                <span class="tooltip">
+                    <img src="./images/coal_ore.png" class="item-image" alt="coal_ore">
+                    <span class="tooltiptext">coal_ore</span>
+                </span>
+                1
+            </td>
+                <td>3</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="coal_ore">
+                <td>
+            <span class="tooltip">
+                <img src="./images/coal_ore.png" class="item-image" alt="coal_ore">
+                <span class="tooltiptext">coal_ore</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/wood_broad.png" class="item-image" alt="wood_broad">
+                    <span class="tooltiptext">wood_broad</span>
+                </span>
+                1
+            </td>
+                <td>2</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/furnace.png" class="item-image" alt="furnace">
+                <span class="tooltiptext">furnace</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="wood_yoyo">
+                <td>
+            <span class="tooltip">
+                <img src="./images/wood_yoyo.png" class="item-image" alt="wood_yoyo">
+                <span class="tooltiptext">wood_yoyo</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/wood_broad.png" class="item-image" alt="wood_broad">
+                    <span class="tooltiptext">wood_broad</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/slik.png" class="item-image" alt="slik">
+                    <span class="tooltiptext">slik</span>
+                </span>
+                3
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="stone_yoyo">
+                <td>
+            <span class="tooltip">
+                <img src="./images/stone_yoyo.png" class="item-image" alt="stone_yoyo">
+                <span class="tooltiptext">stone_yoyo</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/stone.png" class="item-image" alt="stone">
+                    <span class="tooltiptext">stone</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/slik.png" class="item-image" alt="slik">
+                    <span class="tooltiptext">slik</span>
+                </span>
+                3
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            <tr class="synth-row" data-synth-item="iron_yoyo">
+                <td>
+            <span class="tooltip">
+                <img src="./images/iron_yoyo.png" class="item-image" alt="iron_yoyo">
+                <span class="tooltiptext">iron_yoyo</span>
+            </span>
+        </td>
+                <td>
+                <span class="tooltip">
+                    <img src="./images/iron_ingot.png" class="item-image" alt="iron_ingot">
+                    <span class="tooltiptext">iron_ingot</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/wood_bar.png" class="item-image" alt="wood_bar">
+                    <span class="tooltiptext">wood_bar</span>
+                </span>
+                1
+             
+                <span class="tooltip">
+                    <img src="./images/slik.png" class="item-image" alt="slik">
+                    <span class="tooltiptext">slik</span>
+                </span>
+                3
+            </td>
+                <td>1</td>
+                <td>
+            <span class="tooltip">
+                <img src="./images/workbench.png" class="item-image" alt="workbench">
+                <span class="tooltiptext">workbench</span>
+            </span>
+        </td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    <script>
+        document.getElementById('search-input').addEventListener('input', function() {
+            var filter = this.value.toLowerCase();
+            var rows = document.querySelectorAll('#synth-table .synth-row');
+            rows.forEach(function(row) {
+                var synthItem = row.getAttribute('data-synth-item').toLowerCase();
+                if (synthItem.includes(filter)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+    

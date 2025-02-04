@@ -1,0 +1,86 @@
+* {
+    font-family: "得意黑";
+}
+
+.header {
+    background-color: #6091eb;
+    /* 淡蓝色背景 */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    /* 圆角 */
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+    /* 阴影效果 */
+}
+
+.header h1 {
+    color: white;
+    /* 白色字体 */
+    margin: 0;
+    font-size: 24px;
+}
+
+.download-button {
+    background-color: #94fdab;
+    /* 淡黄色背景 */
+    padding: 100px 200px;
+    border-radius: 10px;
+    /* 圆角 */
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+    font-size: 50px;
+    color: black;
+    /* 黑色字体 */
+    border: none;
+    display: inline-block;
+}
+
+.download-button:hover {
+    background-color: #68ffa7;
+    /* 鼠标悬停时的背景色 */
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+}
+
+.update-log-box {
+    background-color: #fde594;
+    /* 淡黄色背景 */
+    padding: 100px 200px;
+    border-radius: 10px;
+    /* 圆角 */
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+    font-size: 50px;
+    display: inline-block;
+}
+
+.update-log-box:hover {
+    background-color: #fff068;
+    /* 鼠标悬停时的背景色 */
+}
+
+.synthesis-table-box {
+    background-color: #94f1fd;
+    /* 淡蓝色背景 */
+    padding: 100px 200px;
+    border-radius: 10px;
+    /* 圆角 */
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+    font-size: 50px;
+    display: inline-block;
+}
+
+.synthesis-table-box:hover {
+    background-color: #68f5ff;
+    /* 鼠标悬停时的背景色 */
+}

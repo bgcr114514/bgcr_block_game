@@ -1,0 +1,90 @@
+body {
+    font-family: "得意黑";
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #6091eb;
+    /* 淡蓝色背景 */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* 圆角 */
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+}
+
+.header h1 {
+    color: white;
+    /* 白色字体 */
+    margin: 0;
+    font-size: 24px;
+}
+
+.timeline {
+    border-left: 4px solid #ddd;
+    /* 时间轴左边的线条 */
+    position: relative;
+    margin: 40px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.timeline li {
+    margin: 20px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -12px;
+    background-color: #4caf50;
+    /* 圆点的背景色 */
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 4px solid #f0f8ff;
+    /* 圆点的边框色 */
+}
+
+.timeline-date {
+    font-weight: bold;
+}
+
+.timeline-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+}
+
+.update-log-box {
+    background-color: #fff9e6;
+    /* 淡黄色背景 */
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* 圆角 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+}
+
+.update-log-box:hover {
+    background-color: #ffeb3b;
+    /* 鼠标悬停时的背景色 */
+}
