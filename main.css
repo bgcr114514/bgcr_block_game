@@ -21,7 +21,7 @@
 }
 
 .download-button {
-    background-color: #94fdab;
+    background-color: #95fdab;
     /* 淡黄色背景 */
     padding: 100px 200px;
     border-radius: 10px;
@@ -38,7 +38,7 @@
 }
 
 .download-button:hover {
-    background-color: #68ffa7;
+    background-color: #69ffa7;
     /* 鼠标悬停时的背景色 */
 }
 
